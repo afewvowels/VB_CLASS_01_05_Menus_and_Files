@@ -43,6 +43,7 @@ Partial Class MenusAndFiles
         Me.BalanceTextBox = New System.Windows.Forms.TextBox()
         Me.BalanceLabel = New System.Windows.Forms.Label()
         Me.AddAccountButton = New System.Windows.Forms.Button()
+        Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,7 +58,7 @@ Partial Class MenusAndFiles
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.CloseToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.CloseToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "&File"
@@ -73,19 +74,19 @@ Partial Class MenusAndFiles
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveToolStripMenuItem.Text = "&Save"
         '
         'CloseToolStripMenuItem
         '
         Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.CloseToolStripMenuItem.Text = "&Close"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ExitToolStripMenuItem.Text = "E&xit"
         '
         'EditToolStripMenuItem
@@ -195,12 +196,19 @@ Partial Class MenusAndFiles
         '
         'AddAccountButton
         '
+        Me.AddAccountButton.Enabled = False
         Me.AddAccountButton.Location = New System.Drawing.Point(110, 133)
         Me.AddAccountButton.Name = "AddAccountButton"
         Me.AddAccountButton.Size = New System.Drawing.Size(162, 23)
         Me.AddAccountButton.TabIndex = 9
         Me.AddAccountButton.Text = "Add Account"
         Me.AddAccountButton.UseVisualStyleBackColor = True
+        '
+        'NewToolStripMenuItem
+        '
+        Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewToolStripMenuItem.Text = "&New"
         '
         'MenusAndFiles
         '
@@ -247,5 +255,6 @@ Partial Class MenusAndFiles
     Friend WithEvents BalanceTextBox As System.Windows.Forms.TextBox
     Friend WithEvents BalanceLabel As System.Windows.Forms.Label
     Friend WithEvents AddAccountButton As System.Windows.Forms.Button
+    Friend WithEvents NewToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
